@@ -7,4 +7,4 @@ doc = Nokogiri::HTML(html)
 # or 
 
 # doc = Nokogiri::HTML(open("https://flatironschool.com/"))
-puts doc.css(".headline-260IBN").text
+puts doc.css("#header-content > div > h1").text
